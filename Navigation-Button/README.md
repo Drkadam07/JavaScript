@@ -1,4 +1,4 @@
-# Navigation Button Project Template
+# Navigation Button  Template
 
 This project template provides a simple and responsive navigation bar with buttons. It includes basic styles and JavaScript to manage navigation interactions like highlighting the current active button, smooth scrolling to sections, and mobile responsiveness.
 
