@@ -11,8 +11,8 @@ This project template provides a simple and responsive navigation bar with butto
 - **Cross-browser Compatible**: Works across all modern browsers.
 
 ## Preview
-![Navigation Button Project Screenshot](Navigation-Button/assets/SS/White_mode.png)
-![Navigation Button Project Screenshot](Navigation-Button/assets/SS/Dark_Mode.png)
+![Navigation Button Project Screenshot](./assets/SS/Dark_Mode.png)
+![Navigation Button Project Screenshot](./assets/SS/White_mode.png)
 
 ## Live Demo
 
