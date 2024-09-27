@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins",sans-serif; 
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.nav-image{
+    display: flex;
+    min-width: 45px;
+    justify-content: center;
+}
+
+.nav-image img{
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+} 
+
+.sidebar{
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 290px;
+    background-color: aliceblue;
+    padding: 15px 10px;
+    box-shadow: 3px 5px 6px #1b1b1bee;
+    transition: all 0.4s ease;
+}
+.sidebar.Close{
+   width: calc(55px + 20px); 
+}
+.logo_items{
+    gap: 5px;
+}
+.logo_name{
+    font-size: 22px;
+    color: rgb(147, 204, 255);
+    /* font-weight: 500px; */
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.sidebar.Close .logo_name,
+.sidebar.Close #lock-icon,
+.sidebar.Close #sidebar-close{
+    opacity: 0;
+    pointer-events: none;
+}
+#lock-icon,
+#sidebar-close {
+    padding: 10px ;
+    color: coral;
+    font-size: 25px;
+    cursor: pointer;
+}
+#sidebar-close {
+    display: none;
+    color: #333;
+}
+
+.menu_container{
+ margin-top: 40px;
+ overflow-y: auto;
+ height: calc(100% - 82px);   
+}
+.menu_container::-webkit-scrollbar{
+    display: none;
+}
+.menu_title{
+    position: relative;
+    height: 50px;
+    width: 55px;
+    font-weight: bold;
+}
+.menu_title .title{
+    margin-left: 15px;
+}
+.sidebar.Close .title{
+    opacity: 0;
+}
+.menu_title .line{
+    position: absolute;
+    left: 50%;
+    height: 3px;
+    width: 20px;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    background-color: rgb(77, 77, 77);
+    transition: all 0.3s ease;
+}
+.menu_title .line{
+    opacity: 0;
+}
+.sidebar.Close .line{
+    opacity: 1;
+}
+.item{
+    list-style: disc;
+}
+.link{
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: rgb(52, 52, 52);
+}
+.link:hover{
+        color: black;
+        background-color: tomato;
+        border-radius: 50px;
+        box-shadow: 0 5px 4px #3a3a3a;
+} 
+.link span{
+white-space: nowrap ;
+}
+.link i{ 
+    height: 50px;
+    min-width: 55px;
+    display:flex;
+    align-items:center;
+    font-size: 22px;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.sidebar_profile{
+    padding-top: 20px;
+    margin-top: 20px;
+    gap: 15px;
+    /* border: 1px solid #3a3a3a; */
+    /* background-color: antiquewhite;    */
+    border-radius: 15px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding: 2px ;
+    box-shadow: 0 5px 7px #3a3a3a;
+}
+.sidebar_profile .name{
+    font-size: 18px;
+    color: #333;
+}
+.sidebar_profile .email {
+    font-size: 15px;
+    color: #333;
+}
+.navbar{
+    max-width: 500px;
+    width: 100%; 
+    position: fixed;
+    top: 9px;
+    left: 60%;
+    padding: 10px 20px;
+    border-radius: 8px 8px 8px 8px;
+    transform: translateX(-50%);
+    background-color: aliceblue;
+    justify-content: space-between; 
+}
+#sidebar-open{
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    margin-right: 20px;
+    display: none;
+}
+.search_box{
+    height: 46px;
+    max-width: 500px;
+    width: 100%;
+    border: 1px solid #8a7272;
+    outline: none; 
+    border-radius: 10px;
+    padding: 0 15px;
+    font-size: 18px;
+    color: #454545;
+}
+.navbar img{
+    /* height: 40px;
+    width: 40px; */
+    margin-left: 20px;    
+}
+
+/* Responsive */
+@media screen and (max-width:1100px) 
+{
+ .navbar{
+    left: 70%;
+ }   
+}
+@media screen and (max-width:800px) 
+{
+    .sidebar{
+        left: 0;
+        z-index: 1000;
+    }
+    .sidebar.close{
+        left: -100%;
+    }
+    #sidebar-close{
+        display: block;
+    }
+    #lock-icon{
+        display: none;
+    }
+ .navbar{
+    left: 55px; 
+    max-width: 100%;
+    transform: translateX(0%);
+ }   
+ #sidebar-open{
+    display: block;
+ }
+ 
+}
