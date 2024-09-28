@@ -19,4 +19,7 @@ This project implements a fully responsive navigation bar that adjusts seamlessl
 
 
 ## output
-![Contact Form](./assets/)
+![responsive navbar](./assets/img/res1.png)
+![Responsive Navbar](./assets/img/res2.png)
+![Responsive Navbar](./assets/img/res3.png)
+
