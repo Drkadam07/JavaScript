@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <link rel="stylesheet" href="./Assets/style.css">
+
+
+<div class="container">
+  <h1>Image Converter</h1>
+  
+  <div class="converter">
+    <div class="drop-zone" id="dropZone" ondragover="handleDragOver(event)" ondrop="handleDrop(event)">
+      <p>Drag & Drop an image file here</p>
+      <input type="file" id="imageInput" accept=".jpg, .png, .gif" onchange="handleFileSelect(event)">
+    </div>
+    <select id="toFormat">
+      <option value="jpg">JPG</option>
+      <option value="png">PNG</option>
+      <option value="gif">GIF</option>
+    </select>
+    <button onclick="convertImage()">Convert</button>
+    <button class="download-button" id="downloadButton" onclick="downloadConvertedImage()">Download Converted Image</button>
+    <button class="reset-button" id="resetButton" onclick="resetInterface()">Reset</button>
+  </div>
+  
+  <div class="result" id="result">
+    <!-- Original image will be displayed here -->
+  </div>
+</div>
+  
+</body>
+</html>
