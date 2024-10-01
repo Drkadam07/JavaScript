@@ -1,0 +1,101 @@
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .converter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .converter input[type="file"],
+  .converter select,
+  .converter button {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .converter input[type="file"] {
+    flex: 1;
+    background-color: #f5f5f5;
+  }
+
+  .converter button {
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+
+  .converter button:hover {
+    background-color: #0056b3;
+  }
+
+  .result {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .result img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+  }
+
+  .download-button,
+  .reset-button {
+    display: none;
+    margin-top: 10px;
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .download-button:hover,
+  .reset-button:hover {
+    background-color: #449d44;
+  }
+
+  .drop-zone {
+    border: 2px dashed #007bff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s;
+  }
+
+  .drop-zone:hover {
+    border-color: #0056b3;
+  }
+
+  @media (max-width: 600px) {
+    .converter {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
