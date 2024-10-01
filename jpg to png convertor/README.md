@@ -26,5 +26,5 @@ Ensure you have a modern browser installed (Chrome, Firefox, etc.).
 
 ### output 
 
-![Contact Form](./assets/ss/image.png)
+![Contact Form](./Assets/ss.png)
 
